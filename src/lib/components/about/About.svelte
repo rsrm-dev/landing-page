@@ -1,4 +1,6 @@
 <script>
+  import { goto } from '$app/navigation';
+  import viewport from '$lib/hooks/useViewportAction';
   import HeadsetMicIcon from '../../icons/HeadsetMicIcon.svelte';
   import MonetizationIcon from '../../icons/MonetizationIcon.svelte';
   import StarIcon from '../../icons/StarIcon.svelte';
@@ -23,7 +25,16 @@
       </span>
       <span>IT Services</span>
     </div>
-    <div class="description">
+    <div
+      class="description"
+      use:viewport
+      on:enterViewport={() => {
+        goto('#about', { replaceState: true, noScroll: true });
+      }}
+      on:exitViewport={() => {
+        // goto('#', { replaceState: true, noScroll: true });
+      }}
+    >
       We specialize in creating custom Web Design & Development, Graphic Design,
       Brand Development, Online Marketing and SEO as our core services. Our team
       works flawlessly and timely to create a website of your dream in a time

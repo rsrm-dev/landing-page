@@ -9,5 +9,5 @@
 
 <div class="input-wrapper">
   <label class="label" for={name}>{label}</label>
-  <input class="input" name={name} placeholder={placeholder} />
+  <input class="input" {name} {placeholder} />
 </div>

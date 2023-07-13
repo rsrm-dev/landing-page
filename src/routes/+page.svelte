@@ -1,4 +1,6 @@
 <script>
+  // @ts-nocheck
+
   import About from '$lib/components/about/About.svelte';
   import Contact from '$lib/components/contact/Contact.svelte';
   import FAQ from '$lib/components/faq/FAQ.svelte';

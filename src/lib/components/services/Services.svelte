@@ -1,4 +1,6 @@
 <script>
+  import { goto } from '$app/navigation';
+  import viewport from '$lib/hooks/useViewportAction.js';
   import { services } from './Services.js';
   import './Services.scss';
 </script>
@@ -12,7 +14,13 @@
       <div class="title">
         <span>Services We Offer </span>
       </div>
-      <div class="description">
+      <div
+        class="description"
+        use:viewport
+        on:enterViewport={() => {
+          goto('#services', { replaceState: true, noScroll: true });
+        }}
+      >
         We provide web solutions and custom application development, ensuring
         that our customers have the right tools to achieve their business goals.
       </div>
