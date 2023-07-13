@@ -1,5 +1,6 @@
 <script>
   import About from '$lib/components/about/About.svelte';
+  import FAQ from '$lib/components/faq/FAQ.svelte';
   import Home from '$lib/components/home/Home.svelte';
   import Portfolio from '$lib/components/portfolio/Portfolio.svelte';
   import Services from '$lib/components/services/Services.svelte';
@@ -11,3 +12,4 @@
 <WhyChooseUs />
 <Services />
 <Portfolio />
+<FAQ />

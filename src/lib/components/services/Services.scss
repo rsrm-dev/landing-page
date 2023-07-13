@@ -5,6 +5,7 @@
     // background: linear-gradient(0deg, #060922, #060922), url(/about-bg.png);
     display: flex;
     padding: 48px;
+    height: 100vh;
 
     margin: auto;
     .service.info {
@@ -55,6 +56,7 @@
         gap: 24px;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
     .service {
         height: fit-content;
