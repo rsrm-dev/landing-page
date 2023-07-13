@@ -6,7 +6,14 @@
   import './Contact.scss';
 </script>
 
-<section id="contact" class="contact-container">
+<section
+  id="contact"
+  class="contact-container"
+  use:viewport
+  on:enterViewport={() => {
+    goto('#contact', { replaceState: true, noScroll: true });
+  }}
+>
   <div class="mask" />
   <div class="left">
     <img src="/contact-img.png" alt="img" />
@@ -23,13 +30,7 @@
         Let's <span style="color:#00aff4">Answer</span> Them
       </span>
     </div>
-    <div
-      class="description"
-      use:viewport
-      on:enterViewport={() => {
-        goto('#contact', { replaceState: true, noScroll: true });
-      }}
-    >
+    <div class="description">
       If you are looking for high-quality Internet service, feel free to fill
       out the form on the right so that our managers could contact you and
       discuss every detail you need in the new network.

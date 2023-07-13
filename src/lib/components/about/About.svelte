@@ -9,7 +9,17 @@
   import './About.scss';
 </script>
 
-<section id="about" class="about-container">
+<section
+  id="about"
+  class="about-container"
+  use:viewport
+  on:enterViewport={() => {
+    goto('#about', { replaceState: true, noScroll: true });
+  }}
+  on:exitViewport={() => {
+    // goto('#', { replaceState: true, noScroll: true });
+  }}
+>
   <div class="mask" />
   <div class="left">
     <img src="/col-left.png" alt="img" />
@@ -25,16 +35,7 @@
       </span>
       <span>IT Services</span>
     </div>
-    <div
-      class="description"
-      use:viewport
-      on:enterViewport={() => {
-        goto('#about', { replaceState: true, noScroll: true });
-      }}
-      on:exitViewport={() => {
-        // goto('#', { replaceState: true, noScroll: true });
-      }}
-    >
+    <div class="description">
       We specialize in creating custom Web Design & Development, Graphic Design,
       Brand Development, Online Marketing and SEO as our core services. Our team
       works flawlessly and timely to create a website of your dream in a time

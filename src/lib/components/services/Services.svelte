@@ -5,7 +5,14 @@
   import './Services.scss';
 </script>
 
-<section id="services" class="services-container">
+<section
+  id="services"
+  class="services-container"
+  use:viewport
+  on:enterViewport={() => {
+    goto('#services', { replaceState: true, noScroll: true });
+  }}
+>
   <div class="services">
     <div class="service info">
       <div class="page">
@@ -14,13 +21,7 @@
       <div class="title">
         <span>Services We Offer </span>
       </div>
-      <div
-        class="description"
-        use:viewport
-        on:enterViewport={() => {
-          goto('#services', { replaceState: true, noScroll: true });
-        }}
-      >
+      <div class="description">
         We provide web solutions and custom application development, ensuring
         that our customers have the right tools to achieve their business goals.
       </div>
