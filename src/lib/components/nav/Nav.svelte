@@ -9,8 +9,13 @@
   <Logo />
   <ul class="pages">
     {#each routes as route}
-      <li class="page" class:active={$page.url.hash === route.href}>
-        <a href={route.href}>
+      <li
+        class="page"
+        class:active={[route.href, route.href.replace('#', '')].includes(
+          $page.url.hash
+        )}
+      >
+        <a rel="external" href={route.href}>
           {route.name}
         </a>
       </li>
