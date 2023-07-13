@@ -1,0 +1,30 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    .label {
+        color: var(--neutral-white, #fff);
+
+        /* Body/Bold */
+        font-family: Josefin Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.16px;
+    }
+    .input {
+        border: 1px solid var(--neutral-stroke, #c1c1c8);
+        background: transparent;
+        height: 48px;
+        padding: 0 12px;
+        color: #fff;
+        outline: none;
+        transition: all 0.3s ease;
+
+        &:hover,
+        &:focus {
+            border-color: #00aff4;
+        }
+    }
+}
