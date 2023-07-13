@@ -1,0 +1,46 @@
+.portfolio-container {
+    padding: 48px;
+    background: linear-gradient(0deg, #060922, #060922);
+    display: flex;
+    margin: auto;
+    .page {
+        color: var(--rsrm-primary, #00aff4);
+        font-family: Josefin Sans;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 150%; /* 36px */
+        letter-spacing: 0.24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .line {
+        border: 1px solid var(--rsrm-primary, #00aff4);
+        width: 32px;
+    }
+    .title {
+        color: var(--neutral-white, #fff);
+        font-family: Josefin Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 72px */
+        letter-spacing: 0.48px;
+        span:nth-child(2) {
+            color: var(--rsrm-primary, #00aff4);
+        }
+    }
+    .description {
+        color: var(--neutral-white, #fff);
+        text-align: justify;
+
+        /* Body/Regular */
+        font-family: Josefin Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.16px;
+    }
+}
