@@ -1,19 +1,20 @@
-.about-container {
-    // background: url(/about-bg.png);
+.why-choose-us-container {
+    background:
+        linear-gradient(180deg, rgba(6, 9, 34, 0.75) 0%, rgba(6, 9, 34, 0) 100%),
+        linear-gradient(0deg, rgba(6, 9, 34, 0) 0%, #060922 100%),
+        url(https://s3-alpha-sig.figma.com/img/b2a6/5c04/df83fd44d9e8d4b4f5485a2fd1258a91?Expires=1690156800&Signature=pIgKPDbjI3dzlxBizLC-GGOfyZ36bLGYpcBLgdfBMkAmvy5SsXknVPSMnE9Kv103i9QUOQ97dFbN~9fOBGp46iGC4C9RAMmsBvNlXfSUFBXdmJKA90ohYiaFRAmbpgb-zxHAzJZrjNhQpRgxV5ZFwIaRceF3aXNgQ3T50FYEVUH5u5~FeNOcF-aErPFu13YoKsZXAnxCqoRrFPp3fCOtJhMxXRjdWI92atkaMw89rqhSoHfYxE-XOkZth41wWAosfsoMgQ8QBSDoGj9UWUEOPWXCan8bOWcnfFxYob9ziauoqaENT87WZURhxLe-g1Y2FsBh~1yh~SdY9QqVRD9zoA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)
+            lightgray 0px -214px / 100% 165.644% no-repeat;
 
-    background: linear-gradient(0deg, #060922, #060922);
-    // background: linear-gradient(0deg, #060922, #060922), url(/about-bg.png);
+    background-size: cover;
+    background-position: center;
     display: flex;
     padding: 48px;
-    height: 100vh;
 
     .mask {
         position: absolute;
-        width: calc(100% - 48px - 48px);
+        width: 100%;
         height: 100%;
-        background: url(/about-bg.png);
         background-size: auto;
-        background-repeat: no-repeat;
     }
 
     .left {
@@ -79,18 +80,13 @@
         justify-content: space-between;
     }
     .info-item {
-        width: calc(50% - 12px);
+        width: 100%;
         display: flex;
         flex-direction: row;
-        gap: 24px;
+        gap: 16px;
+        align-items: center;
     }
     .info-item__icon {
-        background: rgba(9, 175, 244, 0.2);
-        width: 56px;
-        min-width: 56px;
-        height: 56px;
-        min-height: 56px;
-
         display: flex;
         align-items: center;
         justify-content: center;
