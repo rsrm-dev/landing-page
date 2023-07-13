@@ -1,0 +1,33 @@
+.button {
+    display: flex;
+    width: 160px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px 16px;
+    background: var(--rsrm-primary, #00aff4);
+    color: var(--neutral-white, #fff);
+    text-align: center;
+
+    /* Body/Semi */
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.16px;
+    border: 1px solid #00aff4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background: #fff;
+        color: var(--rsrm-primary, #00aff4);
+        box-shadow: 0px 0px 12px 2px #00aff4;
+    }
+    &:active {
+        transition: all 0.1s ease;
+        transform: translate(2px, 2px);
+        box-shadow: -2px -2px 12px 2px #00aff4;
+    }
+}

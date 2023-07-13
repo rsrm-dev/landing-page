@@ -1,0 +1,50 @@
+.home {
+    // background-color: green;
+    // background-image: url(https://s3-alpha-sig.figma.com/img/5c64/0fa3/7cd25085191ab7d68db4bdfc96614915?Expires=1690156800&Signature=X-dcwrmOqoKUXlkCJhLOnVeL--mN9wD9mXtFYB8ItsVTPOuIPqo5evXQlg7OfVPpMEqLJ96HPBzIQl23lzAwqRQ9X3ZJPI8iaYnHoN0j~H4A-~j1p5jOH5J9zo1QF328GGai6iMymqYHV0VcdAb2mCaPQWz2XwqMvWqV92VeBH3ZSjqZI5TejvSj9kVNWKkBCk4TpgcZmmE8KU1mkDlUMJvRLk-wIHpHcHtiyjW9fTM646shw6GmC85B0GKQwKB7rTPYUnFwCOxO3tbEAwwnsJoctHTtxmLhJ2y~4RCakmZegnJ7FoDHbYkemV4AgIhAonvh3SH7KylaY3YZhzIgOw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    // background-position: right;
+    // background-repeat: no-repeat;
+    background:
+        linear-gradient(180deg, rgba(6, 9, 34, 0.75) 0%, rgba(6, 9, 34, 0) 100%),
+        linear-gradient(180deg, rgba(6, 9, 34, 0) 0%, #060922 100%),
+        url(https://s3-alpha-sig.figma.com/img/5c64/0fa3/7cd25085191ab7d68db4bdfc96614915?Expires=1690156800&Signature=X-dcwrmOqoKUXlkCJhLOnVeL--mN9wD9mXtFYB8ItsVTPOuIPqo5evXQlg7OfVPpMEqLJ96HPBzIQl23lzAwqRQ9X3ZJPI8iaYnHoN0j~H4A-~j1p5jOH5J9zo1QF328GGai6iMymqYHV0VcdAb2mCaPQWz2XwqMvWqV92VeBH3ZSjqZI5TejvSj9kVNWKkBCk4TpgcZmmE8KU1mkDlUMJvRLk-wIHpHcHtiyjW9fTM646shw6GmC85B0GKQwKB7rTPYUnFwCOxO3tbEAwwnsJoctHTtxmLhJ2y~4RCakmZegnJ7FoDHbYkemV4AgIhAonvh3SH7KylaY3YZhzIgOw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)
+            lightgray 0px -214px / 100% 165.644% no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: -80px;
+    .title {
+        color: var(--neutral-white, #fff);
+        text-align: center;
+
+        /* H1/Bold */
+        font-family: Josefin Sans;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 84px */
+        letter-spacing: 0.56px;
+        span:nth-child(3) {
+            color: var(--rsrm-primary, #00aff4);
+        }
+    }
+
+    .description {
+        color: var(--neutral-white, #fff);
+        text-align: center;
+
+        /* H3/Regular */
+        font-family: Josefin Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 36px */
+        letter-spacing: 0.24px;
+    }
+}
