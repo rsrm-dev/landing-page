@@ -1,0 +1,94 @@
+.footer-container {
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    background:
+        linear-gradient(180deg, #060922 0%, rgba(6, 9, 34, 0) 100%),
+        url(/footer-bg.jpeg),
+        lightgray 50% / cover no-repeat;
+
+    .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .description {
+            color: var(--neutral-white, #fff);
+
+            /* Body/Regular */
+            font-family: Josefin Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            letter-spacing: 0.16px;
+        }
+        .copyright {
+            color: var(--neutral-white, #fff);
+
+            /* Body/Regular */
+            font-family: Josefin Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            letter-spacing: 0.16px;
+            span {
+                color: var(--rsrm-primary, #00aff4);
+            }
+        }
+    }
+    .resources {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .title {
+            color: var(--neutral-white, #fff);
+
+            /* H3/Bold */
+            font-family: Josefin Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 36px */
+            letter-spacing: 0.24px;
+        }
+        a {
+            color: var(--neutral-white, #fff);
+
+            /* Body/Regular */
+            font-family: Josefin Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            letter-spacing: 0.16px;
+            text-decoration: unset;
+        }
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        color: var(--neutral-white, #fff);
+
+        /* Body/Regular */
+        font-family: Josefin Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.16px;
+        .title {
+            color: var(--neutral-white, #fff);
+
+            /* H3/Bold */
+            font-family: Josefin Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 36px */
+            letter-spacing: 0.24px;
+        }
+    }
+}

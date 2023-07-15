@@ -1,10 +1,12 @@
 <script>
+  import Footer from '$lib/components/footer/Footer.svelte';
   import Nav from '$lib/components/nav/Nav.svelte';
 </script>
 
 <div class="layout-container">
   <Nav />
   <slot />
+  <Footer />
 </div>
 
 <style>
