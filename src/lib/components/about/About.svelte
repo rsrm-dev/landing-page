@@ -1,6 +1,5 @@
 <script>
-  import { goto } from '$app/navigation';
-  import viewport from '$lib/hooks/useViewportAction';
+  import ScrollTo from '$lib/elements/scroll-to/ScrollTo.svelte';
   import HeadsetMicIcon from '../../icons/HeadsetMicIcon.svelte';
   import MonetizationIcon from '../../icons/MonetizationIcon.svelte';
   import StarIcon from '../../icons/StarIcon.svelte';
@@ -9,17 +8,7 @@
   import './About.scss';
 </script>
 
-<section
-  id="about"
-  class="about-container"
-  use:viewport
-  on:enterViewport={() => {
-    goto('#about', { replaceState: true, noScroll: true });
-  }}
-  on:exitViewport={() => {
-    // goto('#', { replaceState: true, noScroll: true });
-  }}
->
+<section id="about" class="about-container">
   <div class="mask" />
   <div class="left">
     <img src="/col-left.png" alt="img" />
@@ -62,5 +51,6 @@
         </div>
       {/each}
     </div>
+    <ScrollTo id="#about" />
   </div>
 </section>

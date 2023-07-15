@@ -1,18 +1,10 @@
 <script>
-  import { goto } from '$app/navigation';
-  import viewport from '$lib/hooks/useViewportAction.js';
+  import ScrollTo from '$lib/elements/scroll-to/ScrollTo.svelte';
   import { services } from './Services.js';
   import './Services.scss';
 </script>
 
-<section
-  id="services"
-  class="services-container"
-  use:viewport
-  on:enterViewport={() => {
-    goto('#services', { replaceState: true, noScroll: true });
-  }}
->
+<section id="services" class="services-container">
   <div class="services">
     <div class="service info">
       <div class="page">
@@ -268,4 +260,5 @@
       </div>
     {/each}
   </div>
+  <ScrollTo id="#services" />
 </section>

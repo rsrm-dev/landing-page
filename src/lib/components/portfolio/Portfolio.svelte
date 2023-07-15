@@ -1,17 +1,9 @@
 <script>
-  import { goto } from '$app/navigation';
-  import viewport from '$lib/hooks/useViewportAction';
+  import ScrollTo from '$lib/elements/scroll-to/ScrollTo.svelte';
   import './Portfolio.scss';
 </script>
 
-<section
-  id="portfolio"
-  class="portfolio-container"
-  use:viewport
-  on:enterViewport={() => {
-    goto('#portfolio', { replaceState: true, noScroll: true });
-  }}
->
+<section id="portfolio" class="portfolio-container">
   <div>
     <div class="page">
       Portfolio <div class="line" />
@@ -20,4 +12,5 @@
       <span>Awesome Portfolio</span>
     </div>
   </div>
+  <ScrollTo id="#portfolio" />
 </section>

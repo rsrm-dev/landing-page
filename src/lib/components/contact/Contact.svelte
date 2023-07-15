@@ -1,19 +1,11 @@
 <script>
-  import { goto } from '$app/navigation';
   import Button from '$lib/elements/button/Button.svelte';
   import Input from '$lib/elements/input/Input.svelte';
-  import viewport from '$lib/hooks/useViewportAction';
+  import ScrollTo from '$lib/elements/scroll-to/ScrollTo.svelte';
   import './Contact.scss';
 </script>
 
-<section
-  id="contact"
-  class="contact-container"
-  use:viewport
-  on:enterViewport={() => {
-    goto('#contact', { replaceState: true, noScroll: true });
-  }}
->
+<section id="contact" class="contact-container">
   <div class="mask" />
   <div class="left">
     <img src="/contact-img.png" alt="img" />
@@ -54,4 +46,5 @@
       </div>
     </div>
   </div>
+  <ScrollTo id="#contact" />
 </section>

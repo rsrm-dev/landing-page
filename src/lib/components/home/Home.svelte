@@ -1,18 +1,10 @@
 <script>
-  import { goto } from '$app/navigation';
   import Button from '$lib/elements/button/Button.svelte';
-  import viewport from '$lib/hooks/useViewportAction';
+  import ScrollTo from '$lib/elements/scroll-to/ScrollTo.svelte';
   import './Home.scss';
 </script>
 
-<section
-  id="home"
-  class="home"
-  use:viewport
-  on:enterViewport={() => {
-    goto('#', { replaceState: true, noScroll: true });
-  }}
->
+<section id="home" class="home">
   <div class="title">
     <span>Providing The Best Services & </span> <br />
     <span>IT Solutions</span>
@@ -25,4 +17,5 @@
   <div>
     <Button>Contact Now</Button>
   </div>
+  <ScrollTo id="#" />
 </section>

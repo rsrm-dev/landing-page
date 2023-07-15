@@ -1,17 +1,9 @@
 <script>
-  import { goto } from '$app/navigation';
-  import viewport from '$lib/hooks/useViewportAction';
+  import ScrollTo from '$lib/elements/scroll-to/ScrollTo.svelte';
   import './FAQ.scss';
 </script>
 
-<section
-  id="faq"
-  class="faq-container"
-  use:viewport
-  on:enterViewport={() => {
-    goto('#faq', { replaceState: true, noScroll: true });
-  }}
->
+<section id="faq" class="faq-container">
   <div class="page">
     <div class="line" />
     <div>FAQ</div>
@@ -21,4 +13,5 @@
     <span>Frequently Asked </span>
     <span>Questions</span>
   </div>
+  <ScrollTo id="#faq" />
 </section>
