@@ -1,13 +1,18 @@
 .nav {
     position: sticky;
     top: 0;
-    width: calc(100% - 48px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 24px;
+
     z-index: 111111;
     background: linear-gradient(180deg, rgba(6, 9, 34, 1) 15%, rgba(6, 9, 34, 0) 100%);
+    .nav-content {
+        max-width: 1920px;
+        width: calc(100% - 48px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 24px;
+        margin: auto;
+    }
     .pages {
         display: flex;
         gap: 12px;

@@ -12,6 +12,17 @@
     padding: 48px;
     height: calc(100vh - 48px - 48px);
     position: relative;
+    max-height: 1080px;
+    .contact-content {
+        max-width: 1920px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: row;
+        height: 100%;
+    }
     .mask {
         position: absolute;
         width: 100%;

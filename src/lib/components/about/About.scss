@@ -6,6 +6,17 @@
     display: flex;
     padding: 48px;
     height: 100vh;
+    max-height: 1080px;
+    .about-content {
+        max-width: 1920px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: row;
+        height: 100%;
+    }
 
     .mask {
         position: absolute;
@@ -14,6 +25,7 @@
         background: url(/about-bg.png);
         background-size: auto;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     .left {

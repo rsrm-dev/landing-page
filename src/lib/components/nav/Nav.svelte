@@ -13,22 +13,24 @@
 </script>
 
 <nav class="nav">
-  <Logo />
-  <ul class="pages">
-    {#each routes as route}
-      <li
-        class="page"
-        class:active={[route.href, route.href.replace('#', '')].includes(
-          $page.url.hash
-        )}
-      >
-        <a rel="external" href={route.href} on:click={handleNavClick}>
-          {route.name}
-        </a>
-      </li>
-    {/each}
-    <div class={`slider ${$page.url.hash.replace('#', '')}`} />
-  </ul>
+  <div class="nav-content">
+    <Logo />
+    <ul class="pages">
+      {#each routes as route}
+        <li
+          class="page"
+          class:active={[route.href, route.href.replace('#', '')].includes(
+            $page.url.hash
+          )}
+        >
+          <a rel="external" href={route.href} on:click={handleNavClick}>
+            {route.name}
+          </a>
+        </li>
+      {/each}
+      <div class={`slider ${$page.url.hash.replace('#', '')}`} />
+    </ul>
 
-  <div>EN/VI</div>
+    <div>EN/VI</div>
+  </div>
 </nav>

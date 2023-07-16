@@ -7,6 +7,16 @@
         url(/footer-bg.jpeg),
         lightgray 50% / cover no-repeat;
 
+    .footer-content {
+        max-width: 1920px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-direction: row;
+        height: 100%;
+    }
     .info {
         width: 50%;
         display: flex;

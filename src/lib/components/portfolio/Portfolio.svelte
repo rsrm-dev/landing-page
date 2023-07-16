@@ -4,13 +4,15 @@
 </script>
 
 <section id="portfolio" class="portfolio-container">
-  <div>
-    <div class="page">
-      Portfolio <div class="line" />
+  <div class="portfolio-content">
+    <div>
+      <div class="page">
+        Portfolio <div class="line" />
+      </div>
+      <div class="title">
+        <span>Awesome Portfolio</span>
+      </div>
     </div>
-    <div class="title">
-      <span>Awesome Portfolio</span>
-    </div>
+    <ScrollTo id="#portfolio" />
   </div>
-  <ScrollTo id="#portfolio" />
 </section>

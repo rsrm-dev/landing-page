@@ -1,13 +1,15 @@
 .technology-container {
     background:
-        linear-gradient(180deg, rgba(6, 9, 34, 0.75) 0%, rgba(6, 9, 34, 0) 100%),
         linear-gradient(0deg, rgba(6, 9, 34, 0) 0%, #060922 100%),
+        // linear-gradient(180deg, rgba(6, 9, 34, 0.75) 0%, rgba(6, 9, 34, 0) 100%),
+        linear-gradient(180deg, rgba(6, 9, 34, 0) 0%, #060922 100%),
         url(/technology-bg.png) lightgray 0px -214px / 100% 165.644% no-repeat;
 
     background-size: cover;
     background-position: center;
     display: flex;
     padding: 48px;
+    min-height: 500px;
 
     .mask {
         position: absolute;

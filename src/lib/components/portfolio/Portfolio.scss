@@ -3,6 +3,17 @@
     background: linear-gradient(0deg, #060922, #060922);
     display: flex;
     margin: auto;
+
+    .portfolio-content {
+        max-width: 1920px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: row;
+        height: 100%;
+    }
     .page {
         color: var(--rsrm-primary, #00aff4);
         font-family: Josefin Sans;

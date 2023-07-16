@@ -1,4 +1,4 @@
-.home {
+.home-container {
     background:
         linear-gradient(180deg, rgba(6, 9, 34, 0.75) 0%, rgba(6, 9, 34, 0) 100%),
         linear-gradient(180deg, rgba(6, 9, 34, 0) 0%, #060922 100%),
@@ -7,13 +7,20 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    flex-direction: column;
+    max-height: 1080px;
+
     margin: auto;
     margin-top: -80px;
+    .home-content {
+        max-width: 1920px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+        height: 100%;
+    }
     .title {
         color: var(--neutral-white, #fff);
         text-align: center;
